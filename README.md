@@ -1,0 +1,1 @@
+Cameracal AFMA Report Tool v13. Fixes PDF generation by replacing unsafe font calls, adding PDF load/error handling, and cache-busting with app-v13.js. Upload all files to GitHub root and delete old app files if desired.
