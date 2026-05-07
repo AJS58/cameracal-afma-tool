@@ -1,1 +1,0 @@
-Cameracal AFMA Report Tool v14. Robust print/save-PDF report generator with no external PDF library. Uses app-v14.js. Upload all files to GitHub root and check index.html references app-v14.js.
