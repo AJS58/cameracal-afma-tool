@@ -21,6 +21,34 @@
 <div id="wtFocals" class="two"><label>Wide focal length<input id="wideFocal" type="number" value="24"></label><label>Tele focal length<input id="teleFocal" type="number" value="70"></label></div>
 <label id="singleFocalWrap" class="hidden">Single focal length<input id="singleFocal" type="number" value="70"></label>
 <label>Subject distance<input id="distance" type="number" value="10" step="0.1"></label>
+
+<h2>Lens Optimisation</h2>
+<div id="optWT" class="two">
+  <label>Wide optimum aperture
+    <select id="wideOptAperture">
+      <option value="">Select aperture</option>
+      <option>f/1.2</option><option>f/1.4</option><option>f/1.8</option><option>f/2</option>
+      <option>f/2.8</option><option>f/4</option><option>f/5.6</option><option>f/8</option>
+      <option>f/11</option><option>f/16</option><option>f/22</option>
+    </select>
+  </label>
+  <label>Tele optimum aperture
+    <select id="teleOptAperture">
+      <option value="">Select aperture</option>
+      <option>f/1.2</option><option>f/1.4</option><option>f/1.8</option><option>f/2</option>
+      <option>f/2.8</option><option>f/4</option><option>f/5.6</option><option>f/8</option>
+      <option>f/11</option><option>f/16</option><option>f/22</option>
+    </select>
+  </label>
+</div>
+<label id="optSingle" class="hidden">Single optimum aperture
+  <select id="singleOptAperture">
+    <option value="">Select aperture</option>
+    <option>f/1.2</option><option>f/1.4</option><option>f/1.8</option><option>f/2</option>
+    <option>f/2.8</option><option>f/4</option><option>f/5.6</option><option>f/8</option>
+    <option>f/11</option><option>f/16</option><option>f/22</option>
+  </select>
+</label>
 <h2>Before Calibration</h2>
 <div id="beforeWT" class="two"><label>Wide before<input id="beforeWide" type="number" value="-8"></label><label>Tele before<input id="beforeTele" type="number" value="12"></label></div>
 <label id="beforeSingleWrap" class="hidden">Single before<input id="beforeSingle" type="number" value="0"></label>
@@ -42,6 +70,10 @@
 <div id="wideCard"><span>After wide</span><strong id="wideOffset"></strong><small id="wideDirection"></small></div>
 <div id="beforeTeleCard"><span>Before tele</span><strong id="beforeTeleOffset"></strong><small id="beforeTeleDirection"></small></div>
 <div id="teleCard"><span>After tele</span><strong id="teleOffset"></strong><small id="teleDirection"></small></div>
+</div>
+<div class="optimisationCards">
+  <div><span>Wide optimum aperture</span><strong id="wideOptDisplay">Not specified</strong></div>
+  <div id="teleOptCard"><span>Tele optimum aperture</span><strong id="teleOptDisplay">Not specified</strong></div>
 </div>
 <div class="camera"><img src="camera-base-clean.jpeg"><div class="lcd"><div class="lcdHead">AF Microadjustment</div><div class="lcdLens" id="lcdLens"></div><div class="row" id="wRow"><b id="wLabel">W</b><div class="railWrap"><div class="labels"><span>-20</span><span>-10</span><span>0</span><span>+10</span><span>+20</span></div><div class="rail"><div class="ticks"></div><i id="wideMarker"></i></div></div><b id="wideLcd">-3</b></div><div class="row" id="tRow"><b>T</b><div class="railWrap"><div class="labels"><span>-20</span><span>-10</span><span>0</span><span>+10</span><span>+20</span></div><div class="rail"><div class="ticks"></div><i id="teleMarker"></i></div></div><b id="teleLcd">+4</b></div></div></div>
 <div class="scaleBox"><h3>AF Microadjustment Scale</h3><div class="scaleRow" id="scaleW"><b id="scaleWLabel">W</b><div class="bigRail"><div class="bigTicks"></div><i id="scaleWMarker"></i></div><span id="scaleWValue"></span></div><div class="scaleRow" id="scaleT"><b>T</b><div class="bigRail"><div class="bigTicks"></div><i id="scaleTMarker"></i></div><span id="scaleTValue"></span></div></div>

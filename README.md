@@ -1,9 +1,8 @@
-Cameracal AFMA Report Tool v8
+Cameracal AFMA Report Tool v9
 
 Updates:
-- Corrected Cameracal Services logo incorporated into the web app header.
-- Same logo is used in the generated PDF report.
-- Branded PDF includes customer name, date, reference number, camera description, lens description, before/after AFMA where used, offset in cm, technician notes, and AF point overlay image if uploaded.
-- Copyright footer included in PDF report.
-
-Upload the full folder contents to GitHub Pages.
+- PDF logo enlarged and widened to avoid squashing.
+- Lens optimisation aperture added for Wide and Tele focal lengths.
+- Single mode includes a single optimisation aperture field.
+- Optimisation values appear in the app and the generated PDF report.
+- PDF footer includes copyright and website.
