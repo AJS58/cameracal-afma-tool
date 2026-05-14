@@ -1,0 +1,1 @@
+The old rear camera image asset has been removed from this build.
